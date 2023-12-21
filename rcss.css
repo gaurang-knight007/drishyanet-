@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+
+  background-color:rgb(1, 1, 43);
+}
+
+.navbar
+{
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  min-height: 150px;
+  align-items: center;
+  justify-content: space-between;
+  background-color:rgb(1, 1, 32);
+  align-self: center;
+}
+
+.navbar li
+{
+  margin: 0 50px;
+  list-style-type: none;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img
+{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  position: sticky;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  position: sticky;
+}
+
+.buttons {
+  background-color: #12035b;
+  padding: 7px 17px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px;
+}
+
+.main {
+  width: 100%;
+  margin-top: 0px;
+  background-size: cover;
+  align-items: center;
+  overflow-x: hidden;
+  justify-content: center;
+  display: flex;
+  background-position: center;
+  min-height: 800px;
+}
+
+.area
+{
+  width: 450px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  background-color: transparent;
+  color: aqua;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0.5px;
+}
+
+.search
+{
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0);
+   min-height: 80px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   text-align: left;
+   margin-top: 10px;
+}
+
+.box
+{
+  width: 80%;
+  min-height: 50px;
+  background-color: transparent;
+  border-radius: 7px;
+}
+
+.b1
+{
+  padding-left: 9%;
+  text-wrap: nowrap;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 5px;
+}
+
+.try
+{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  background-color: #120551;
+  font-size: 20px;
+  width: 90%;
+  min-height: 50px;
+  border-radius: 7px;
+}
+
+.down
+{
+  align-items: left;
+  width: 100%;
+  min-height: 300px;
+  height: 100px;
+  justify-content: space-between;
+  background-color:rgb(1, 1, 32);
+  color:aqua;
+  align-self: left;
+}
+
+.d1
+{
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.tab1
+{ 
+    padding-left: 5%;
+    padding-top: 1%;
+}
+  
+.tab1 a
+{
+  color: aqua;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+tr, td {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+  }

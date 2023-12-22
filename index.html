@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> drishyanet </title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>drishyanet</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Include jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Smooth scrolling script -->
+  <script>
+    // Smooth scrolling to anchor links
+    $(document).ready(function () {
+      $("a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+</head>
+
+
 
 <body>
   
     <div class="random">
     <div class="navbar">
       <li class="logo"><img src="s.png"></li>
-      <li class="buttons"><a href="index1.html" style="text-decoration: none; color: white;"><strong>Sign In</strong></a>
+      <li class="buttons1"><a href="#main" style="text-decoration: none; color: white;"><strong>Home</strong></a></li>
+      <li class="buttons1"><a href="#container1" style="text-decoration: none; color: white;"><strong>Avaibility</strong></a></li>
+      <li class="buttons1"><a href="#container2" style="text-decoration: none; color: white;"><strong>Traffic</strong></a></li>
+      <li class="buttons1"><a href="#container3" style="text-decoration: none; color: white;"><strong>Attendance</strong></a></li>
+      <li class="buttons1"><a href="#container4" style="text-decoration: none; color: white;"><strong>Security</strong></a></li>
+      <li class="buttons1"><a href="#container5" style="text-decoration: none; color: white;"><strong>Agriculture</strong></a></li>
+      <li class="buttons1"><a href="#container6" style="text-decoration: none; color: white;"><strong>Retail</strong></a></li>
+      <li class="buttons1"><a href="#question" style="text-decoration: none; color: white;"><strong>FAQs</strong></a></li>
+      <li class="buttons1"><a href="index1.html" style="text-decoration: none; color: white;"><strong>Sign In</strong></a>
     </div>
 
-    <div class="main">
+    <div id="main" class="main">
         <div class="area">
-            <h1 style="text-decoration: none; color: silver;">Security, docs storage, traffic monitoring <br>
-                DrishyaLens
+            <h1 style="text-decoration: none; color: silver;">Security, docs storage, traffic monitoring
             </h1>
+            <br>
             <h3 style="text-decoration: none; color: silver;">
               detect anywhere anytime.
             </h3>
             <div class="search">
-              <input type="text" class="box" placeholder="Email Address" > 
+              <input type="text" class="box" placeholder="Email Address" required > 
               <div class="b1"> 
-                <span class="try"> <a href="index3.html" style="text-decoration: none; color: white;">Get started</a></span>
+                <span class="try"><a href="index3.html" style="text-decoration: none; color: white;">Get started</a></span>
               </div>    
             </div>
             <h4 style="text-decoration: none; color: silver;"> Be smart be future ready. Join us  </h4>
@@ -36,7 +70,7 @@
     </div>
 
 
-    <div class="container1">
+    <div id="container1" class="container1">
       <div class="image">
         <img src="3.png">
       </div>
@@ -50,7 +84,7 @@
     </div>
 
 
-    <div class="container2">
+    <div id="container2" class="container2">
       <div class="text">
         <h1>Effective Traffic management.</h1>
           <p>
@@ -63,7 +97,7 @@
     </div>
 
 
-    <div class="container3">    
+    <div id="container3" class="container3">    
       <div class="image"><img src="99.png"></div>
       <div class="text">
           <h1>Smart Attendance System</h1>
@@ -75,7 +109,7 @@
       </div>
     </div>
 
-    <div class="container4">
+    <div id="container4" class="container4">
       <div class="text">
         <h1>Security and Survillence</h1>
           <p>
@@ -87,7 +121,7 @@
       <div class="image"><img src="100.png"></div>
     </div>
 
-    <div class="container5">    
+    <div id="container5" class="container5">    
           <div class="image"><img src="22.png"></div>
           <div class="text">
               <h1>Agriculture and crops management.</h1>
@@ -98,7 +132,7 @@
             
     </div>
         
-    <div class="container6">
+    <div id="container6" class="container6">
       <div class="text">
         <h1>Retail and inventory management.</h1>
           <p>
@@ -111,7 +145,7 @@
 
           
 
-    <div class="question">
+    <div id="question" class="question">
       <h1>FAQs</h1>
           <div class="quest">
               <div class="textbox">
@@ -177,5 +211,6 @@
       </div>
     </div>
     </div>
+    
   </body>
 </html>
